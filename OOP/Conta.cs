@@ -11,5 +11,15 @@ namespace OOP
         public double Saldo { get; set; }
         public double Limite { get; set; }
         public int Numero { get; set; }
+
+        public void Deposita(double valor) //void = método sem retorno
+        {
+            this.Saldo += valor; //incrementa o valor na propriedade Saldo
+        }
+
+        public double ConsultaSaldoDisponivel()
+        {
+            return this.Saldo + this.Limite;
+        }
     }
 }
