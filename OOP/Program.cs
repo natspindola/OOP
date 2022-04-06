@@ -9,7 +9,7 @@ namespace OOP
             //Criando instância da conta
             Conta conta = new Conta();
 
-            conta.Limite = 500;
+            conta.adicionarLimite(1500);
 
             conta.Deposita(1500);
             conta.Deposita(2500);
@@ -19,7 +19,7 @@ namespace OOP
             double saldo = conta.ConsultaSaldoDisponivel();
 
             Console.WriteLine("Seu saldo é: " + saldo);
-
+            Console.WriteLine("Seu limite é: " + conta.Limite);
 
             //Primeira forma - sem usar método
 
