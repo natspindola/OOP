@@ -9,5 +9,7 @@ namespace OOP
     public class Cliente
     {
         public string Nome { get; set; }
+        public string Numero { get; internal set; }
+        public string DataDeValidade { get; internal set; }
     }
 }

@@ -6,25 +6,45 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            //Criando instância da conta
-            Conta conta = new Conta(123, 300);
+            //Criando um objeto de cada classe
 
-            conta.AdicionarLimite(1500);
+            CartaoDeCredito cdc = new CartaoDeCredito();
+            Cliente c = new Cliente();
 
-            conta.Deposita(1500);
-            conta.Deposita(2500);
-            conta.Deposita(4500);
+            //Adicionando o nome do cliente
+            c.Nome = "Natália Spindola";
 
-            bool saca = conta.Saca(7000); //saque maior que saldo dá valor indisponível
+            //Adicionando o número e data de validade do cartão
+            cdc.Numero = "1234 5678 9012 3456";
+            cdc.DataDeValidade = "04/2026";
+            cdc.Cliente = c;
 
-            if(saca)
-            {
-                double saldo = conta.ConsultaSaldoDisponivel();
+            Console.WriteLine("O nome do cliente é: " + c.Nome);
+            Console.WriteLine("O número do cartão é: " + cdc.Numero);
+            Console.WriteLine("A validade do cartão é: " + cdc.DataDeValidade);
+            Console.WriteLine("O nome do cliente do agregado é: " + cdc.Cliente.Nome);
 
-                Console.WriteLine("Seu saldo é: " + saldo);
-                Console.WriteLine("Seu limite é: " + conta.Limite);
-                Console.WriteLine("O número da sua conta é: " + conta.Numero);
-            }
+
+
+            ////Criando instância da conta com métodos
+            //Conta conta = new Conta(123, 300);
+
+            //conta.AdicionarLimite(1500);
+
+            //conta.Deposita(1500);
+            //conta.Deposita(2500);
+            //conta.Deposita(4500);
+
+            //bool saca = conta.Saca(7000); //saque maior que saldo dá valor indisponível
+
+            //if (saca)
+            //{
+            //    double saldo = conta.ConsultaSaldoDisponivel();
+
+            //    Console.WriteLine("Seu saldo é: " + saldo);
+            //    Console.WriteLine("Seu limite é: " + conta.Limite);
+            //    Console.WriteLine("O número da sua conta é: " + conta.Numero);
+            //}
         }
     }
 }
