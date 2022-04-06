@@ -8,7 +8,7 @@ namespace OOP
 {
     public class Conta
     {
-        public double Saldo { get; set; }
+        private double Saldo { get; set; } //private = modificador de acesso
         public double Limite { get; set; }
         public int Numero { get; set; }
 
