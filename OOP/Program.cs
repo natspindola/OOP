@@ -15,12 +15,13 @@ namespace OOP
             conta.Deposita(2500);
             conta.Deposita(4500);
 
-            conta.ConsultaSaldoDisponivel();
+            conta.Saca(7000);
+
             double saldo = conta.ConsultaSaldoDisponivel();
 
             Console.WriteLine("Seu saldo é: " + saldo);
             Console.WriteLine("Seu limite é: " + conta.Limite);
-
+            
             //Primeira forma - sem usar método
 
             //Criando instância da conta

@@ -17,6 +17,11 @@ namespace OOP
             this.Saldo += valor; //incrementa o valor na propriedade Saldo
         }
 
+        public void Saca(double valor)
+        {
+            this.Saldo -= valor;
+        }
+
         public void adicionarLimite(double valor)
         {
             this.Limite = valor; //atualiza o limite, não incrementa
