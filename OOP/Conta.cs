@@ -8,9 +8,14 @@ namespace OOP
 {
     public class Conta
     {
+        public Conta(int numero)
+        {
+            this.Numero = numero;
+        }
+
         private double Saldo { get; set; } //private = modificador de acesso
         public double Limite { get; private set; }
-        public int Numero { get; set; }
+        public int Numero { get; private set; }
 
         public void Deposita(double valor) //void = método sem retorno
         {
@@ -31,7 +36,7 @@ namespace OOP
             return true;
         }
 
-        public void adicionarLimite(double valor)
+        public void AdicionarLimite(double valor)
         {
             this.Limite = valor; //atualiza o limite, não incrementa
         }
