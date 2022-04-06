@@ -8,9 +8,15 @@ namespace OOP
 {
     public class Conta
     {
-        public Conta(int numero)
+        //public Conta(int numero)
+        //{
+        //    this.Numero = numero;
+        //}
+
+        public Conta(int numero, double limite)
         {
             this.Numero = numero;
+            this.Limite = limite;
         }
 
         private double Saldo { get; set; } //private = modificador de acesso

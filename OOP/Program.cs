@@ -7,7 +7,7 @@ namespace OOP
         static void Main(string[] args)
         {
             //Criando instância da conta
-            Conta conta = new Conta(123);
+            Conta conta = new Conta(123, 300);
 
             conta.AdicionarLimite(1500);
 
@@ -23,7 +23,7 @@ namespace OOP
 
                 Console.WriteLine("Seu saldo é: " + saldo);
                 Console.WriteLine("Seu limite é: " + conta.Limite);
-                Console.WriteLine("O número da sua conta é: " + conta);
+                Console.WriteLine("O número da sua conta é: " + conta.Numero);
             }
         }
     }
