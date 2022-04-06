@@ -15,12 +15,16 @@ namespace OOP
             conta.Deposita(2500);
             conta.Deposita(4500);
 
-            conta.Saca(7000);
+            bool saca = conta.Saca(7000); //saque maior que saldo dá valor indisponível
 
-            double saldo = conta.ConsultaSaldoDisponivel();
+            if(saca)
+            {
+                double saldo = conta.ConsultaSaldoDisponivel();
 
-            Console.WriteLine("Seu saldo é: " + saldo);
-            Console.WriteLine("Seu limite é: " + conta.Limite);
+                Console.WriteLine("Seu saldo é: " + saldo);
+                Console.WriteLine("Seu limite é: " + conta.Limite);
+            }
+
             
             //Primeira forma - sem usar método
 
