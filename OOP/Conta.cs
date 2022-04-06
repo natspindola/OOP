@@ -17,9 +17,18 @@ namespace OOP
             this.Saldo += valor; //incrementa o valor na propriedade Saldo
         }
 
-        public void Saca(double valor)
+        public bool Saca(double valor)
         {
+            double saldoDisponivel = this.ConsultaSaldoDisponivel();
+
+            if(valor > saldoDisponivel)
+            {
+                Console.WriteLine("Saldo insuficiente");
+                return false;
+            } 
+
             this.Saldo -= valor;
+            return true;
         }
 
         public void adicionarLimite(double valor)
