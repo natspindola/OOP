@@ -10,8 +10,16 @@ namespace OOP
             // classe abstrata não permite instancia. serve de modelo para uma classe filha
             // polimorfismo é "muitas formas", cada ação tem determinadas características diferentes
 
+            AnalistaTI analistaTI = new AnalistaTI();
+            Gerente gerente = new Gerente();
+            GerenteAgencia gerenteAgencia = new GerenteAgencia();
+            GerenteTI gerenteTI = new GerenteTI();
 
-
+            analistaTI.Nome = "Natalia Spindola";
+            analistaTI.Salario = 3000;
+            Console.WriteLine("O salário do Analista de TI é: " + analistaTI.Salario);
+            analistaTI.Reajustar();
+            Console.WriteLine("O salário do Analista de TI reajustado é: " + analistaTI.Salario);
         }
     }
 }
