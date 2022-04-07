@@ -20,6 +20,30 @@ namespace OOP
             Console.WriteLine("O salário do Analista de TI é: " + analistaTI.Salario);
             analistaTI.Reajustar();
             Console.WriteLine("O salário do Analista de TI reajustado é: " + analistaTI.Salario);
+
+            Console.WriteLine("---------------------------------------------------------------------------");
+
+            gerente.Nome = "Natanael Spindola";
+            gerente.Salario = 8000;
+            Console.WriteLine("O salário do Gerente é: " + gerente.Salario);
+            gerente.Reajustar();
+            Console.WriteLine("O salário do Gerente reajustado é: " + gerente.Salario);
+
+            Console.WriteLine("---------------------------------------------------------------------------");
+
+            gerenteAgencia.Nome = "Leila Spindola";
+            gerenteAgencia.Salario = 10000;
+            Console.WriteLine("O salário do Gerente de Agência é: " + gerenteAgencia.Salario);
+            gerenteAgencia.Reajustar();
+            Console.WriteLine("O salário do Gerente de Agência reajustado é: " + gerenteAgencia.Salario);
+
+            Console.WriteLine("---------------------------------------------------------------------------");
+
+            gerenteTI.Nome = "Gustavo Spindola";
+            gerenteTI.Salario = 20000;
+            Console.WriteLine("O salário do Gerente de Agência é: " + gerenteTI.Salario);
+            gerenteTI.Reajustar();
+            Console.WriteLine("O salário do Gerente de TI reajustado é: " + gerenteTI.Salario);
         }
     }
 }
