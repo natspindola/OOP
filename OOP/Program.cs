@@ -6,7 +6,14 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            
+            ContaPoupanca contaPoupanca = new ContaPoupanca(112, 0);
+
+            contaPoupanca.Deposita(100);
+            contaPoupanca.Saca(10);
+
+            double saldo = contaPoupanca.ConsultaSaldoDisponivel();
+
+            Console.WriteLine("Saldo é: " + saldo);
         }
     }
 }
