@@ -6,25 +6,35 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            //Criando um objeto de cada classe
+            Conta conta1 = new Conta(123, 500);
+            Conta conta2 = new Conta(456, 800);
+            Conta conta3 = new Conta(789, 900);
 
-            CartaoDeCredito cdc = new CartaoDeCredito();
-            Cliente c = new Cliente();
-
-            //Adicionando o nome do cliente
-            c.Nome = "Natália Spindola";
-
-            //Adicionando o número e data de validade do cartão
-            cdc.Numero = "1234 5678 9012 3456";
-            cdc.DataDeValidade = "04/2026";
-            cdc.Cliente = c;
-
-            Console.WriteLine("O nome do cliente é: " + c.Nome);
-            Console.WriteLine("O número do cartão é: " + cdc.Numero);
-            Console.WriteLine("A validade do cartão é: " + cdc.DataDeValidade);
-            Console.WriteLine("O nome do cliente do agregado é: " + cdc.Cliente.Nome);
+            Console.WriteLine("Total de contas: " + conta1.TotalContasCriadas);
 
 
+
+            
+
+            ////Criando um objeto de cada classe
+
+            //CartaoDeCredito cdc = new CartaoDeCredito();
+            //Cliente c = new Cliente();
+
+            ////Adicionando o nome do cliente
+            //c.Nome = "Natália Spindola";
+
+            ////Adicionando o número e data de validade do cartão
+            //cdc.Numero = "1234 5678 9012 3456";
+            //cdc.DataDeValidade = "04/2026";
+            //cdc.Cliente = c;
+
+            //Console.WriteLine("O nome do cliente é: " + c.Nome);
+            //Console.WriteLine("O número do cartão é: " + cdc.Numero);
+            //Console.WriteLine("A validade do cartão é: " + cdc.DataDeValidade);
+            //Console.WriteLine("O nome do cliente do agregado é: " + cdc.Cliente.Nome);
+
+            
 
             ////Criando instância da conta com métodos
             //Conta conta = new Conta(123, 300);

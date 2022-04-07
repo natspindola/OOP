@@ -17,11 +17,13 @@ namespace OOP
         {
             this.Numero = numero;
             this.Limite = limite;
+            Conta.TotalContasCriadas++;
         }
 
         private double Saldo { get; set; } //private = modificador de acesso
         public double Limite { get; private set; }
         public int Numero { get; private set; }
+        public static int TotalContasCriadas { get; set; }
 
         public void Deposita(double valor) //void = método sem retorno
         {
