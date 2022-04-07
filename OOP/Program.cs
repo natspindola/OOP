@@ -6,6 +6,8 @@ namespace OOP
     {
         static void Main(string[] args)
         {
+            // Herança
+
             ContaPoupanca contaPoupanca = new ContaPoupanca(112, 0);
 
             contaPoupanca.Deposita(100);
@@ -13,7 +15,18 @@ namespace OOP
 
             double saldo = contaPoupanca.ConsultaSaldoDisponivel();
 
-            Console.WriteLine("Saldo é: " + saldo);
+            contaPoupanca.MostrarNumeroConta();
+
+            Console.WriteLine("Saldo da conta poupança é: " + saldo);
+
+            Conta conta = new Conta(113, 100);
+
+            conta.Deposita(500);
+            conta.Saca(140);
+
+            double saldoContaCorrente = conta.ConsultaSaldoDisponivel();
+
+            Console.WriteLine("Saldo da conta corrente é: " + saldoContaCorrente);
         }
     }
 }

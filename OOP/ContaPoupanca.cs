@@ -12,6 +12,9 @@ namespace OOP
         {
         }
 
-
+        public void MostrarNumeroConta()
+        {
+            Console.WriteLine("A conta poupança é: " + this.Numero);
+        }
     }
 }
