@@ -9,10 +9,12 @@ namespace OOP
             Conta conta1 = new Conta(123, 500);
             Conta conta2 = new Conta(456, 800);
             Conta conta3 = new Conta(789, 900);
+            Conta conta4 = new Conta(987, 1000);
 
-            Console.WriteLine("Total de contas: " + conta1.TotalContasCriadas);
+            Console.WriteLine("Total de contas: " + Conta.TotalContasCriadas);
 
-
+            int total = Conta.ProximoTotalContasCriadas();
+            Console.WriteLine("Próximo total de contas: " + total);
 
             
 

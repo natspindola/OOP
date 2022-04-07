@@ -23,7 +23,12 @@ namespace OOP
         private double Saldo { get; set; } //private = modificador de acesso
         public double Limite { get; private set; }
         public int Numero { get; private set; }
-        public static int TotalContasCriadas { get; set; }
+        public static int TotalContasCriadas { get; set; } //atributo estático
+
+        public static int ProximoTotalContasCriadas()
+        {
+            return Conta.TotalContasCriadas + 1;
+        }
 
         public void Deposita(double valor) //void = método sem retorno
         {
