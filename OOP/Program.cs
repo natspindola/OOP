@@ -6,30 +6,16 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            // Herança
 
-            ContaPoupanca contaPoupanca = new ContaPoupanca(112, 0);
+            // classe abstrata não permite instancia. serve de modelo para uma classe filha
+            // polimorfismo é "muitas formas", cada ação tem determinadas características diferentes
 
-            contaPoupanca.Deposita(100);
-            contaPoupanca.Saca(10);
 
-            double saldo = contaPoupanca.ConsultaSaldoDisponivel();
 
-            contaPoupanca.MostrarNumeroConta();
-
-            Console.WriteLine("Saldo da conta poupança é: " + saldo);
-
-            Conta conta = new Conta(113, 100);
-
-            conta.Deposita(500);
-            conta.Saca(140);
-
-            double saldoContaCorrente = conta.ConsultaSaldoDisponivel();
-
-            Console.WriteLine("Saldo da conta corrente é: " + saldoContaCorrente);
         }
     }
 }
+
 
 
 ////Primeira forma - sem usar método
@@ -121,4 +107,30 @@ namespace OOP
 
 //int total = Conta.ProximoTotalContasCriadas();
 //Console.WriteLine("Próximo total de contas: " + total);
+
+
+
+
+//// Herança
+
+//ContaPoupanca contaPoupanca = new ContaPoupanca(112, 0);
+
+//contaPoupanca.Deposita(100);
+//contaPoupanca.Saca(10);
+
+//double saldo = contaPoupanca.ConsultaSaldoDisponivel();
+
+//contaPoupanca.MostrarNumeroConta();
+
+//Console.WriteLine("Saldo da conta poupança é: " + saldo);
+
+//Conta conta = new Conta(113, 100);
+
+//conta.Deposita(500);
+//conta.Saca(140);
+
+//double saldoContaCorrente = conta.ConsultaSaldoDisponivel();
+
+//Console.WriteLine("Saldo da conta corrente é: " + saldoContaCorrente);
+
 
