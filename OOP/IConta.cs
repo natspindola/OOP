@@ -9,5 +9,8 @@ namespace OOP
     public interface IConta
     {
         void Deposita(double valor);
+        bool Saca(double valor);
+        void AdicionarLimite(double valor);
+        double ConsultaSaldoDisponivel();
     }
 }

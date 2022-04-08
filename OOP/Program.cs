@@ -9,6 +9,7 @@ namespace OOP
             // Interface é um conjunto de métodos públicos que deverão ser implementados pela classe que utiliza
             // Interface não pode ser instanciada, mas uma clsse pode implementar diversas interfaces
 
+            
 
         }
     }

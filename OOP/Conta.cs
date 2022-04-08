@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    public class Conta
+    public abstract class Conta : IConta //implementação pode ter várias, diferente de herança
     {
         //public Conta(int numero)
         //{
