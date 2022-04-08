@@ -16,7 +16,6 @@ namespace OOP
             analistaTI.Reajustar();
 
             Console.WriteLine("Salário é: " + analistaTI.Salario);
-
         }
     }
 }
