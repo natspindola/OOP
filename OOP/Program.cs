@@ -9,7 +9,19 @@ namespace OOP
             // Interface é um conjunto de métodos públicos que deverão ser implementados pela classe que utiliza
             // Interface não pode ser instanciada, mas uma clsse pode implementar diversas interfaces
 
-            
+            ContaPoupanca contaPoupanca = new ContaPoupanca(111, 0);
+            contaPoupanca.Deposita(100);
+            contaPoupanca.Saca(10);
+            double saldoPoupanca = contaPoupanca.ConsultaSaldoDisponivel();
+
+            Console.WriteLine("Saldo da poupança é: " + saldoPoupanca);
+
+            ContaCorrente contaCorrente = new ContaCorrente(111, 100);
+            contaCorrente.Deposita(100);
+            contaCorrente.Saca(50);
+            double saldoCorrente = contaCorrente.ConsultaSaldoDisponivel();
+
+            Console.WriteLine("Saldo da conta corrente é: " + saldoCorrente);
 
         }
     }
