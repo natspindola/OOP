@@ -20,7 +20,7 @@ namespace OOP
             Conta.TotalContasCriadas++;
         }
 
-        private double Saldo { get; set; } //private = modificador de acesso
+        protected double Saldo { get; set; } //private = modificador de acesso
         public double Limite { get; private set; }
         public int Numero { get; private set; }
         public static int TotalContasCriadas { get; set; } //atributo estático
@@ -35,7 +35,7 @@ namespace OOP
             this.Saldo += valor; //incrementa o valor na propriedade Saldo
         }
 
-        public bool Saca(double valor)
+        public virtual bool Saca(double valor)
         {
             double saldoDisponivel = this.ConsultaSaldoDisponivel();
 
@@ -47,7 +47,7 @@ namespace OOP
 
             this.Saldo -= valor;
             return true;
-        }
+        } //virtual permite que seja sobrescrito
 
         public void AdicionarLimite(double valor)
         {
