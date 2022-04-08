@@ -6,22 +6,16 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            // Interface é um conjunto de métodos públicos que deverão ser implementados pela classe que utiliza
-            // Interface não pode ser instanciada, mas uma clsse pode implementar diversas interfaces
+            // Encapsulamento significa separar o programa wm partes mais isoladas possível
+            // serve para controlar o acesso aos atributos e métodos de uma classe
 
-            ContaPoupanca contaPoupanca = new ContaPoupanca(111, 0);
-            contaPoupanca.Deposita(100);
-            contaPoupanca.Saca(10);
-            double saldoPoupanca = contaPoupanca.ConsultaSaldoDisponivel();
+            AnalistaTI analistaTI = new AnalistaTI();
 
-            Console.WriteLine("Saldo da poupança é: " + saldoPoupanca);
+            analistaTI.AdicionarNome("Natália", "Spindola");
+            analistaTI.AdicionarSalarioPadrao(1000);
+            analistaTI.Reajustar();
 
-            ContaCorrente contaCorrente = new ContaCorrente(111, 100);
-            contaCorrente.Deposita(100);
-            contaCorrente.Saca(50);
-            double saldoCorrente = contaCorrente.ConsultaSaldoDisponivel();
-
-            Console.WriteLine("Saldo da conta corrente é: " + saldoCorrente);
+            Console.WriteLine("Salário é: " + analistaTI.Salario);
 
         }
     }
@@ -184,5 +178,26 @@ namespace OOP
 //Console.WriteLine("O salário do Gerente de Agência é: " + gerenteTI.Salario);
 //gerenteTI.Reajustar();
 //Console.WriteLine("O salário do Gerente de TI reajustado é: " + gerenteTI.Salario);
+
+
+
+
+
+//// Interface é um conjunto de métodos públicos que deverão ser implementados pela classe que utiliza
+//// Interface não pode ser instanciada, mas uma clsse pode implementar diversas interfaces
+
+//ContaPoupanca contaPoupanca = new ContaPoupanca(111, 0);
+//contaPoupanca.Deposita(100);
+//contaPoupanca.Saca(10);
+//double saldoPoupanca = contaPoupanca.ConsultaSaldoDisponivel();
+
+//Console.WriteLine("Saldo da poupança é: " + saldoPoupanca);
+
+//ContaCorrente contaCorrente = new ContaCorrente(111, 100);
+//contaCorrente.Deposita(100);
+//contaCorrente.Saca(50);
+//double saldoCorrente = contaCorrente.ConsultaSaldoDisponivel();
+
+//Console.WriteLine("Saldo da conta corrente é: " + saldoCorrente);
 
 
